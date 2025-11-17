@@ -16,6 +16,9 @@ return {
                 enable = false,
             }
         })
+
+        vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+        vim.keymap.set("n", "<leader>.", "<cmd>Lspsaga code_action<CR>")
     end,
     dependencies = {
         "nvim-treesitter/nvim-treesitter",
