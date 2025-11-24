@@ -2,7 +2,9 @@ return {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
-        require("telescope")
+        require("telescope").setup({
+            pickers = { colorscheme = { enable_preview = true }}
+        })
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<leader>pf', builtin.find_files)

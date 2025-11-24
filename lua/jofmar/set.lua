@@ -23,3 +23,5 @@ vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
 
 vim.g.mapleader = " "
+vim.o.guifont = "Nonicons Nerd Font:h12"  -- Ajusta el tamaño
+
